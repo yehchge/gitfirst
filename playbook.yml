@@ -1,0 +1,11 @@
+---
+
+  - hosts: dev
+    tasks:
+      - name: pull gitfirst
+        git:
+          repo: "https://github.com/yehchge/gitfirst.git"
+          dest: /data/sites/gitfirst
+          version: stable
+
+
